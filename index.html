@@ -5,34 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contingency Funds</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <script src="script.js"></script>
 
     <header>
-      <h1>Contingency Funds</h1>
+      <h1 id="headerTitle">Contingency Funds</h1>
     </header>
 
-    <div class="container fadeIn">
+    <div class="container">
       <!-- First Page -->
-      <section id="firstPage">
-        <h2>What are Contingency Funds?</h2>
-        <p>
+      <section id="firstPage" class="fadeIn">
+        <h2 id="whatAreFundsTitle">What are Contingency Funds?</h2>
+        <p id="whatAreFundsText">
           A Contingency fund is a crucial financial safety net designed to cover
           unexpected expenses such as medical emergencies, car repairs, or job
           loss. It helps ensure financial stability during uncertain times.
-          Financial experts recommend having a Contingency fund in place before
-          investing or taking on significant debt.
         </p>
 
-        <h2>Why Do You Need a Contingency Fund?</h2>
-        <p>
-          Life is unpredictable, and emergencies can arise at any moment.
-          Whether it’s an unplanned medical expense, a natural disaster, or an
-          unforeseen job loss, an emergency fund provides peace of mind. Without
-          it, you might be forced to rely on credit cards or loans, which can
-          lead to further financial strain. Experts advise that an emergency
-          fund should be a priority for financial security.
+        <h2 id="whyNeedTitle">Why Do You Need a Contingency Fund?</h2>
+        <p id="whyNeedText">
+          Life is unpredictable, and emergencies can arise at any moment. An
+          emergency fund provides peace of mind.
         </p>
 
         <div class="divider"></div>
@@ -92,6 +87,14 @@
           <div class="graph-bar"></div>
           <div class="graph-bar"></div>
           <div class="graph-bar"></div>
+        </div>
+
+        <!-- Chart for displaying data -->
+        <div
+          id="chartContainer"
+          style="display: none; width: 100%; max-width: 600px"
+        >
+          <canvas id="fundChart"></canvas>
         </div>
 
         <div id="result" class="result" style="display: none"></div>
