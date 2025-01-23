@@ -1,83 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contigency Funds</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contingency Funds</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
 
-<header>
-  <h1>Contigency Funds</h1>
-</header>
+    <header>
+      <h1>Contingency Funds</h1>
+    </header>
 
-<div class="container fadeIn">
-  <!-- First Page -->
-  <section>
-    <h2>What are Contigency Funds?</h2>
-    <p>A Contigency fund is a crucial financial safety net designed to cover unexpected expenses such as medical emergencies, car repairs, or job loss. It helps ensure financial stability during uncertain times. Financial experts recommend having an Contigency fund in place before investing or taking on significant debt.</p>
-    
-    <h2>Why Do You Need a Contigency Fund?</h2>
-    <p>Life is unpredictable, and emergencies can arise at any moment. Whether it’s an unplanned medical expense, a natural disaster, or an unforeseen job loss, an emergency fund provides peace of mind. Without it, you might be forced to rely on credit cards or loans, which can lead to further financial strain. Experts advise that an emergency fund should be a priority for financial security.</p>
+    <div class="container fadeIn">
+      <!-- First Page -->
+      <section id="firstPage">
+        <h2>What are Contingency Funds?</h2>
+        <p>
+          A Contingency fund is a crucial financial safety net designed to cover
+          unexpected expenses such as medical emergencies, car repairs, or job
+          loss. It helps ensure financial stability during uncertain times.
+          Financial experts recommend having a Contingency fund in place before
+          investing or taking on significant debt.
+        </p>
 
-    <div class="divider"></div>
+        <h2>Why Do You Need a Contingency Fund?</h2>
+        <p>
+          Life is unpredictable, and emergencies can arise at any moment.
+          Whether it’s an unplanned medical expense, a natural disaster, or an
+          unforeseen job loss, an emergency fund provides peace of mind. Without
+          it, you might be forced to rely on credit cards or loans, which can
+          lead to further financial strain. Experts advise that an emergency
+          fund should be a priority for financial security.
+        </p>
 
-    <button class="next-button" onclick="nextPage()">Next</button>
-  </section>
+        <div class="divider"></div>
 
-  <!-- Second Page -->
-  <section id="secondPage" class="fadeIn" style="display: none;">
-    <h2>The 70-20-10 Rule</h2>
-    <p>The 70-20-10 rule is a simple financial strategy that helps with saving and investment. According to this rule:</p>
-    <ul>
-      <li>70% of your Contigency fund should be invested in Fixed Deposits (FD), which must be easily withdrawable.</li>
-      <li>20% should go into your bank savings account.</li>
-      <li>10% should be kept in hand as cash for immediate needs.</li>
-    </ul>
-    
-    <h3>Contigency Funds Calculation</h3>
-    <p>Your Contigency fund must be 6 times your monthly income. The rule of 70-20-10 will help you distribute your funds accordingly.</p>
+        <button class="next-button" id="nextButton1">Next</button>
+      </section>
 
-    <div class="divider"></div>
+      <!-- Second Page -->
+      <section id="secondPage" class="fadeIn" style="display: none">
+        <h2>The 70-20-10 Rule</h2>
+        <p>
+          The 70-20-10 rule is a simple financial strategy that helps with
+          saving and investment. According to this rule:
+        </p>
+        <ul>
+          <li>
+            70% of your Contingency fund should be invested in Fixed Deposits
+            (FD), which must be easily withdrawable.
+          </li>
+          <li>20% should go into your bank savings account.</li>
+          <li>10% should be kept in hand as cash for immediate needs.</li>
+        </ul>
 
-    <button class="next-button" onclick="showCalculator()">Next</button>
-  </section>
+        <h3>Contingency Funds Calculation</h3>
+        <p>
+          Your Contingency fund must be 6 times your monthly income. The rule of
+          70-20-10 will help you distribute your funds accordingly.
+        </p>
 
-  <!-- Calculator Page -->
-  <section id="calculatorPage" class="calculator-container">
-    <h2>Let's Calculate Your Contigency Fund!</h2>
-    
-    <label for="monthlyIncome">Enter your monthly income:</label>
-    <input type="number" id="monthlyIncome" class="input-field" placeholder="Enter your amount in rupees" />
-    
-    <button class="calculate-button" onclick="calculateFunds()">Calculate</button>
+        <div class="divider"></div>
 
-    <!-- Graph animation -->
-    <div id="graphContainer" class="graph-container" style="display: none;">
-      <div class="graph-bar"></div>
-      <div class="graph-bar"></div>
-      <div class="graph-bar"></div>
-      <div class="graph-bar"></div>
-      <div class="graph-bar"></div>
+        <button class="next-button" id="nextButton2">Next</button>
+      </section>
+
+      <!-- Calculator Page -->
+      <section
+        id="calculatorPage"
+        class="calculator-container"
+        style="display: none"
+      >
+        <h2>Let's Calculate Your Contingency Fund!</h2>
+
+        <label for="monthlyIncome">Enter your monthly income:</label>
+        <input
+          type="number"
+          id="monthlyIncome"
+          class="input-field"
+          placeholder="Enter your amount in rupees"
+        />
+
+        <button class="calculate-button" id="calculateButton">Calculate</button>
+
+        <!-- Graph animation -->
+        <div id="graphContainer" class="graph-container" style="display: none">
+          <div class="graph-bar"></div>
+          <div class="graph-bar"></div>
+          <div class="graph-bar"></div>
+          <div class="graph-bar"></div>
+          <div class="graph-bar"></div>
+        </div>
+
+        <div id="result" class="result" style="display: none"></div>
+      </section>
     </div>
 
-    <div id="result" class="result" style="display: none;"></div>
-  </section>
-</div>
-
-<!-- Footer Section -->
-<div class="footer">
-    <p>Developed by <a href="https://www.linkedin.com/in/vedant200704prasad/" target="_blank">Vedant</a> and <a href="https://www.linkedin.com/in/5h1vm/" target="_blank">Shivam</a> 
-      <span class="icons">
-        <span class="heart">❤</span>
-        <span class="currency">💰</span>
-        <span class="market">📈</span>
-      </span>
-    </p>
-  </div>
-  
-
-<script src="scripts.js"></script>
-</body>
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>
+        Developed by
+        <a
+          href="https://www.linkedin.com/in/vedant200704prasad/"
+          target="_blank"
+          >Vedant</a
+        >
+        and
+        <a href="https://www.linkedin.com/in/5h1vm/" target="_blank">Shivam</a>
+        <span class="icons">
+          <span class="heart">❤</span>
+          <span class="currency">💰</span>
+          <span class="market">📈</span>
+        </span>
+      </p>
+    </div>
+  </body>
 </html>
