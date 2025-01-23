@@ -27,9 +27,5 @@ This tool will guide you through understanding contingency funds and give you a 
 - **CSS3**: For styling the web page and adding animations (such as the dynamic graph).  
 - **JavaScript**: For interactive functionality and calculations.  
 
-## Contributing  
-Feel free to contribute to the project by submitting issues, feature requests, or pull requests!  
-If you have suggestions for improving the design or functionality, don't hesitate to get in touch.
-
 ## Credits  
 Developed with ❤️ by [Vedant](https://www.linkedin.com/in/vedant200704prasad/) and [Shivam](https://www.linkedin.com/in/5h1vm/).  
