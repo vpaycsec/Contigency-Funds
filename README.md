@@ -1,4 +1,5 @@
-# Emergency Funds Calculator  
+# 
+Contingency Funds Calculator  
 
 ## Overview  
 A web app to educate users about emergency funds and help calculate savings based on the 70-20-10 rule:  
